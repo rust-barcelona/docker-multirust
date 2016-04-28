@@ -17,12 +17,12 @@ The interactive session needs to bind the working directory in the host machine 
 
 Generically:
 ```bash
-docker run -it --rm -v [path_project_directory]:/workspace rust-barcelona/docker-multirust
+docker run -it --rm -v [path_project_directory]:/workspace rustbarcelona/docker-multirust
 ```
 
 To bind the current folder:
 ```bash
-docker run -it --rm -v $(pwd):/workspace rust-barcelona/docker-multirust
+docker run -it --rm -v $(pwd):/workspace rustbarcelona/docker-multirust
 ```
 
 After this step is completed, a bash session is established on the guest system, in the /workspace folder.
