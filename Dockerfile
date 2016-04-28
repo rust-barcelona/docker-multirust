@@ -6,8 +6,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	apt-get update && apt-get install -yq curl git file apt-utils build-essential \
 	gcc-arm-linux-gnueabi \
 	gcc-arm-linux-gnueabihf \
-	gcc-aarch64-linux-gnu \
-	&& apt-get clean \
+	gcc-aarch64-linux-gnu
+RUN apt-get clean
 
 # Install Multirust
 RUN git clone --recursive https://github.com/brson/multirust \
